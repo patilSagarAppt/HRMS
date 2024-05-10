@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-custom-purple {
+  background-color: #4f46e5;
+}
+
+@layer utilities {
+  .bg-custom-image {
+    background-image: url("../src/Assets/Images/FrameBg.png");
+    background-size: cover;
+    background-position: center;
+  }
+}
