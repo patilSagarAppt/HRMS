@@ -1,18 +1,18 @@
-import { useSelector } from "react-redux";
 import { Outlet } from "react-router-dom";
 import Header from "./Header";
+import Sidebar from "../Components/Sidebar";
 
 const Body = () => {
-  const isVisible = useSelector((store) => store.LeftHamburger.isVisible);
   return (
-    <>
-      <Header />
-      <div className="grid grid-cols-7">
-        <div className={isVisible ? " col-span-6" : "col-span-7 ml-16"}>
+    <div className="flex flex-col h-screen">
+      <div className="flex flex-1">
+        <Sidebar />
+        <div className="flex-1">
+          <Header />
           <Outlet />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 export default Body;

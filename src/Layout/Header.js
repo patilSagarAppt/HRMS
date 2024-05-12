@@ -1,11 +1,9 @@
+import React from "react";
+
 const Header = () => {
   return (
-    <div className="grid grid-flow-col shadow-lg p-3 sticky top-0 z-40 bg-white">
-      <div>
-        <div className="col-span-10 px-80 mt-2"></div>
-      </div>
-      <div className="flex col-span-1"></div>
-    </div>
+    <div className="bg-white border text-white h-12 flex items-center justify-center"></div>
   );
 };
+
 export default Header;

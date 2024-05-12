@@ -1,10 +1,11 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Container from "./Components/Container";
 import Body from "./Layout/Body";
 import LoginView from "./views/LoginView";
 import Roles from "./views/Roles";
 import SigninView from "./views/SigninView";
 import SignupView from "./views/SignupView";
+import ApprisalsView from "./views/ApprisalsView";
+import Dashboard from "./Components/Dashboard";
 
 const appRouter = createBrowserRouter([
   {
@@ -28,8 +29,13 @@ const appRouter = createBrowserRouter([
     element: <Body />,
     children: [
       {
-        path: "container",
-        element: <Container />,
+        path: "dashboard",
+        element: <Dashboard />,
+        children: [],
+      },
+      {
+        path: "apprisal",
+        element: <ApprisalsView />,
         children: [],
       },
     ],

@@ -50,7 +50,7 @@ const SignupView = () => {
           to="/roles"
           className="bg-custom-purple hover:bg-white hover:text-gray-500 hover:border-gray-500 border-2 border-transparent text-white font-bold py-2 px-4 rounded w-full"
         >
-          Sign in
+          Create account
         </button>
         <p className="text-gray-500">
           Already have an account?
